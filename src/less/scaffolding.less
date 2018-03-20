@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma-Bold.woff2") format("woff2"), url("../fonts/Tahoma-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma.woff2") format("woff2"), url("../fonts/Tahoma.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arial-boldmt-webfont.woff2") format("woff2"), url("../fonts/arial-boldmt-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arialmt-webfont.woff2") format("woff2"), url("../fonts/arialmt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  font-weight: bold;
+  background: #ffffff url("../img/background-pattern.png") repeat;
+  // background: gray;
+}
+
+@media (min-width: 970px) {
+  body {
+    min-width: 970px;
+    max-width: 1285px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+}
+
+.display-none {
+  display: none;
+}
+
+.page-main {
+  width: 970px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
