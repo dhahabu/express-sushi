@@ -5,7 +5,7 @@
   "description": "Тестовое задание для Best Media",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "7.1.x",
+    "autoprefixer": "^7.1.6",
     "browser-sync": "2.18.x",
     "del": "^3.0.0",
     "gulp": "3.9.x",
