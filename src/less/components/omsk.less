@@ -10,18 +10,31 @@
 }
 
 .omsk__slides {
+  position: relative;
   width: 968px;
+  height: 287px;
   margin: 0 auto;
   outline: 2px solid #ffde00;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.5);
 }
 
-.omsk__item {
-  position: relative;
+.omsk__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 968px;
   height: 287px;
+  opacity: 0;
+  transition: opacity 2s;
 }
 
-.omsk__item-wrapper {
+.omsk__slide--visible {
+  z-index: 2;
+  opacity: 1;
+}
+
+.omsk__slide-wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -29,11 +42,11 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
-.omsk__item--soon-open {
+.omsk__slide--soon-open {
   background: url('../img/slide-soon-open.jpg') no-repeat center;
 }
 
-.omsk__item--is-open {
+.omsk__slide--is-open {
   background: url('../img/slide-is-open.jpg') no-repeat center;
 }
 
