@@ -29,15 +29,16 @@
 body {
   font-family: 'Tahoma', sans-serif;
   font-weight: bold;
-  background: #ffffff url('../img/background-pattern.png') repeat;
+  background: gray;
+  background: #e2e2e2 url('../img/body-background-pattern.png') repeat;
 }
 
-@media (min-width: 970px) {
-  body {
-    min-width: 970px;
-    max-width: 1285px;
-  }
-}
+// @media (min-width: 970px) {
+//   body {
+//     min-width: 970px;
+//     max-width: 1285px;
+//   }
+// }
 
 a {
   text-decoration: none;
@@ -48,6 +49,18 @@ a {
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
+}
+
+.container {
+  margin: 0 auto;
+  background: #ffffff url('../img/background-pattern.png') repeat;
+}
+
+@media (min-width: 970px) {
+  .container {
+    min-width: 970px;
+    max-width: 1285px;
+  }
 }
 
 .page-main {
