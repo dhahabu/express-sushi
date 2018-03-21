@@ -360,6 +360,7 @@ a {
 }
 .page-header__image {
   max-width: none;
+  min-width: 1285px;
 }
 .page-header__tel {
   position: absolute;
